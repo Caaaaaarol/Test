@@ -1,0 +1,339 @@
+/* 初始化样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+li {
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+}
+button {
+  cursor: pointer;
+}
+a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+.clearfix:after {
+  visibility: hidden;
+  clear: both;
+  display: block;
+  content: ".";
+  height: 0;
+}
+.clearfix {
+  *zoom: 1;
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?1epm5i");
+  src: url("../fonts/icomoon.eot?1epm5i#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?1epm5i") format("truetype"),
+    url("../fonts/icomoon.woff?1epm5i") format("woff"),
+    url("../fonts/icomoon.svg?1epm5i#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+/* 头部模块开始 */
+header {
+  position: relative;
+  height: 100px;
+  text-align: center;
+}
+header .logo,
+.log_out {
+  position: absolute;
+  top: 30px;
+  color: #fff;
+  background-color: red;
+}
+.logo {
+  width: 105px;
+  height: 30px;
+  font-size: 13px;
+  line-height: 30px;
+}
+.log_out {
+  right: 0;
+  width: 110px;
+  height: 40px;
+  font-size: 13px;
+  line-height: 40px;
+}
+.setting,
+.bell {
+  position: absolute;
+  top: 42px;
+  width: 18px;
+  height: 18px;
+  font-family: "icomoon";
+  font-size: 17px;
+  line-height: 18px;
+}
+.setting a,
+.bell a {
+  color: #666;
+}
+
+.setting {
+  right: 185px;
+}
+.bell {
+  right: 150px;
+}
+
+/* 主要内容-banner */
+main {
+  height: 1276px;
+  background-color: #f5f8f9;
+}
+.main_top {
+  height: 169px;
+}
+.banner {
+  margin-top: 67px;
+}
+.banner h1,
+.banner h3 {
+  font-weight: 400;
+  color: #262b2e;
+}
+.banner h1 {
+  font-size: 30px;
+}
+.banner h3 {
+  font-size: 15px;
+  opacity: 0.7;
+}
+/* 主要内容-导航条 */
+.nav {
+  position: relative;
+  left: 18px;
+  width: 540px;
+  height: 42px;
+  margin-top: 95px;
+}
+.nav ul {
+  position: absolute;
+}
+.nav .nav_marker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 108px;
+  height: 37px;
+  border-bottom: 3px solid #cccfd0;
+}
+
+.nav ul li {
+  float: left;
+  width: 108px;
+  height: 42px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 42px;
+  cursor: pointer;
+}
+.nav ul li a {
+  color: #666;
+}
+/* 主要内容-轮播图 */
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 560px;
+  height: 288px;
+  border: 10px solid #fff;
+}
+.slider_bar {
+  position: absolute;
+  width: 9999px;
+  height: 267px;
+}
+.slider ol li {
+  float: left;
+}
+.prev,
+.next {
+  display: none;
+  position: absolute;
+  top: 50%;
+  width: 24px;
+  height: 36px;
+  font-size: 19px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 36px;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  transform: translateY(-50%);
+}
+.prev {
+  left: 0;
+  margin-left: 6px;
+}
+.next {
+  right: 0;
+  margin-right: 6px;
+}
+.slider_square {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 13px;
+}
+.slider_square li {
+  margin: 4px;
+  width: 8px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.slider_square .selected {
+  background: #fff;
+  transition: all 0.3s;
+  transform: scale(1.5, 1.5);
+}
+
+/* 主要内容-support */
+
+.support {
+  width: 560px;
+  height: 288px;
+  background-color: #fff;
+}
+.support_top {
+  position: relative;
+  height: 110px;
+  border-bottom: 1px solid #efeff0;
+}
+
+.support span {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  font-size: 18px;
+}
+.support button {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  width: 95px;
+  height: 40px;
+  font-size: 13px;
+  background-color: #fff;
+  border: 2px solid #e9e9ea;
+  opacity: 0.7;
+}
+.support_main {
+  position: relative;
+  height: 178px;
+}
+/* support 表格 */
+table {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 459px;
+  text-align: left;
+  border-spacing: 20px;
+  transform: translate(-50%, -50%);
+}
+table th {
+  font-size: 14px;
+  color: #262b2e;
+}
+table td {
+  font-size: 13px;
+  color: #43474a;
+}
+table td:first-child,
+table th:first-child {
+  width: 103px;
+}
+table td:nth-child(2),
+table td:nth-child(2) {
+  width: 291px;
+}
+table th:last-child {
+  text-align: right;
+}
+table tr td:last-child {
+  display: inline-block;
+  width: 65px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  background-color: #5dd054;
+}
+/* echarts图表 */
+.main_echarts {
+  margin-top: 20px;
+  height: 800px;
+}
+.line {
+  height: 340px;
+  background-color: #fff;
+}
+.pie,
+.bar {
+  float: left;
+  margin-top: 20px;
+  width: 560px;
+  height: 377px;
+  background-color: #fff;
+}
+.bar {
+  margin-left: 20px;
+}
+/* 底部样式 */
+.foot_box {
+  height: 253px;
+  background-color: #202124;
+}
+.foot_box .container {
+  display: flex;
+  padding-top: 80px;
+  justify-content: space-evenly;
+}
+.foot_box .logo {
+  color: #fff;
+  background-color: red;
+}
+.foot_box ul {
+  height: 170px;
+}
+.foot_box li {
+  margin-bottom: 18px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+}
+.foot_box ul li:hover {
+  text-decoration: underline;
+}
+.footer_end {
+  height: 37px;
+  background-color: #1c1d20;
+}
